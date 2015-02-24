@@ -7,7 +7,7 @@
 			this.fetchRecords();
                         this.calcularPromedio = function(){
                             var self = $scope.currentRecord;
-                            var promedio = (Number(self.minAge.toString().replace(/ /g, ""))+Number(self.maxAge.toString().replace(/ /g, "")))/2;
+                            var promedio = (self.minAge+self.maxAge)/2;
                             alert(promedio);
                         };
         }]);
